@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84E4D7E71E9DC06D002A761D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D7E61E9DC06D002A761D /* AppDelegate.swift */; };
+		84E4D7E91E9DC06D002A761D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D7E81E9DC06D002A761D /* ViewController.swift */; };
+		84E4D7EC1E9DC06D002A761D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E4D7EA1E9DC06D002A761D /* Main.storyboard */; };
+		84E4D7EF1E9DC06D002A761D /* Darwin_s_Encyclopedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D7ED1E9DC06D002A761D /* Darwin_s_Encyclopedia.xcdatamodeld */; };
+		84E4D7F11E9DC06D002A761D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E4D7F01E9DC06D002A761D /* Assets.xcassets */; };
+		84E4D7F41E9DC06D002A761D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E4D7F21E9DC06D002A761D /* LaunchScreen.storyboard */; };
+		84E4D7FF1E9DC06D002A761D /* Darwin_s_EncyclopediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D7FE1E9DC06D002A761D /* Darwin_s_EncyclopediaTests.swift */; };
+		84E4D80A1E9DC06D002A761D /* Darwin_s_EncyclopediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D8091E9DC06D002A761D /* Darwin_s_EncyclopediaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84E4D7FB1E9DC06D002A761D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E4D7DB1E9DC06D002A761D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E4D7E21E9DC06D002A761D;
+			remoteInfo = "Darwin's Encyclopedia";
+		};
+		84E4D8061E9DC06D002A761D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E4D7DB1E9DC06D002A761D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E4D7E21E9DC06D002A761D;
+			remoteInfo = "Darwin's Encyclopedia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84E4D7E31E9DC06D002A761D /* Darwin's Encyclopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Darwin's Encyclopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E4D7E61E9DC06D002A761D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84E4D7E81E9DC06D002A761D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84E4D7EB1E9DC06D002A761D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84E4D7EE1E9DC06D002A761D /* Darwin_s_Encyclopedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Darwin_s_Encyclopedia.xcdatamodel; sourceTree = "<group>"; };
+		84E4D7F01E9DC06D002A761D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84E4D7F31E9DC06D002A761D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84E4D7F51E9DC06D002A761D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E4D7FA1E9DC06D002A761D /* Darwin's EncyclopediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Darwin's EncyclopediaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E4D7FE1E9DC06D002A761D /* Darwin_s_EncyclopediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Darwin_s_EncyclopediaTests.swift; sourceTree = "<group>"; };
+		84E4D8001E9DC06D002A761D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E4D8051E9DC06D002A761D /* Darwin's EncyclopediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Darwin's EncyclopediaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E4D8091E9DC06D002A761D /* Darwin_s_EncyclopediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Darwin_s_EncyclopediaUITests.swift; sourceTree = "<group>"; };
+		84E4D80B1E9DC06D002A761D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84E4D7E01E9DC06D002A761D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E4D7F71E9DC06D002A761D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E4D8021E9DC06D002A761D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84E4D7DA1E9DC06D002A761D = {
+			isa = PBXGroup;
+			children = (
+				84E4D7E51E9DC06D002A761D /* Darwin's Encyclopedia */,
+				84E4D7FD1E9DC06D002A761D /* Darwin's EncyclopediaTests */,
+				84E4D8081E9DC06D002A761D /* Darwin's EncyclopediaUITests */,
+				84E4D7E41E9DC06D002A761D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84E4D7E41E9DC06D002A761D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84E4D7E31E9DC06D002A761D /* Darwin's Encyclopedia.app */,
+				84E4D7FA1E9DC06D002A761D /* Darwin's EncyclopediaTests.xctest */,
+				84E4D8051E9DC06D002A761D /* Darwin's EncyclopediaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84E4D7E51E9DC06D002A761D /* Darwin's Encyclopedia */ = {
+			isa = PBXGroup;
+			children = (
+				84E4D7E61E9DC06D002A761D /* AppDelegate.swift */,
+				84E4D7E81E9DC06D002A761D /* ViewController.swift */,
+				84E4D7EA1E9DC06D002A761D /* Main.storyboard */,
+				84E4D7F01E9DC06D002A761D /* Assets.xcassets */,
+				84E4D7F21E9DC06D002A761D /* LaunchScreen.storyboard */,
+				84E4D7F51E9DC06D002A761D /* Info.plist */,
+				84E4D7ED1E9DC06D002A761D /* Darwin_s_Encyclopedia.xcdatamodeld */,
+			);
+			path = "Darwin's Encyclopedia";
+			sourceTree = "<group>";
+		};
+		84E4D7FD1E9DC06D002A761D /* Darwin's EncyclopediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				84E4D7FE1E9DC06D002A761D /* Darwin_s_EncyclopediaTests.swift */,
+				84E4D8001E9DC06D002A761D /* Info.plist */,
+			);
+			path = "Darwin's EncyclopediaTests";
+			sourceTree = "<group>";
+		};
+		84E4D8081E9DC06D002A761D /* Darwin's EncyclopediaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84E4D8091E9DC06D002A761D /* Darwin_s_EncyclopediaUITests.swift */,
+				84E4D80B1E9DC06D002A761D /* Info.plist */,
+			);
+			path = "Darwin's EncyclopediaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84E4D7E21E9DC06D002A761D /* Darwin's Encyclopedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E4D80E1E9DC06D002A761D /* Build configuration list for PBXNativeTarget "Darwin's Encyclopedia" */;
+			buildPhases = (
+				84E4D7DF1E9DC06D002A761D /* Sources */,
+				84E4D7E01E9DC06D002A761D /* Frameworks */,
+				84E4D7E11E9DC06D002A761D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Darwin's Encyclopedia";
+			productName = "Darwin's Encyclopedia";
+			productReference = 84E4D7E31E9DC06D002A761D /* Darwin's Encyclopedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84E4D7F91E9DC06D002A761D /* Darwin's EncyclopediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E4D8111E9DC06D002A761D /* Build configuration list for PBXNativeTarget "Darwin's EncyclopediaTests" */;
+			buildPhases = (
+				84E4D7F61E9DC06D002A761D /* Sources */,
+				84E4D7F71E9DC06D002A761D /* Frameworks */,
+				84E4D7F81E9DC06D002A761D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E4D7FC1E9DC06D002A761D /* PBXTargetDependency */,
+			);
+			name = "Darwin's EncyclopediaTests";
+			productName = "Darwin's EncyclopediaTests";
+			productReference = 84E4D7FA1E9DC06D002A761D /* Darwin's EncyclopediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84E4D8041E9DC06D002A761D /* Darwin's EncyclopediaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E4D8141E9DC06D002A761D /* Build configuration list for PBXNativeTarget "Darwin's EncyclopediaUITests" */;
+			buildPhases = (
+				84E4D8011E9DC06D002A761D /* Sources */,
+				84E4D8021E9DC06D002A761D /* Frameworks */,
+				84E4D8031E9DC06D002A761D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E4D8071E9DC06D002A761D /* PBXTargetDependency */,
+			);
+			name = "Darwin's EncyclopediaUITests";
+			productName = "Darwin's EncyclopediaUITests";
+			productReference = 84E4D8051E9DC06D002A761D /* Darwin's EncyclopediaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84E4D7DB1E9DC06D002A761D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					84E4D7E21E9DC06D002A761D = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					84E4D7F91E9DC06D002A761D = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84E4D7E21E9DC06D002A761D;
+					};
+					84E4D8041E9DC06D002A761D = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84E4D7E21E9DC06D002A761D;
+					};
+				};
+			};
+			buildConfigurationList = 84E4D7DE1E9DC06D002A761D /* Build configuration list for PBXProject "Darwin's Encyclopedia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84E4D7DA1E9DC06D002A761D;
+			productRefGroup = 84E4D7E41E9DC06D002A761D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84E4D7E21E9DC06D002A761D /* Darwin's Encyclopedia */,
+				84E4D7F91E9DC06D002A761D /* Darwin's EncyclopediaTests */,
+				84E4D8041E9DC06D002A761D /* Darwin's EncyclopediaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84E4D7E11E9DC06D002A761D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E4D7F41E9DC06D002A761D /* LaunchScreen.storyboard in Resources */,
+				84E4D7F11E9DC06D002A761D /* Assets.xcassets in Resources */,
+				84E4D7EC1E9DC06D002A761D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E4D7F81E9DC06D002A761D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E4D8031E9DC06D002A761D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84E4D7DF1E9DC06D002A761D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E4D7EF1E9DC06D002A761D /* Darwin_s_Encyclopedia.xcdatamodeld in Sources */,
+				84E4D7E91E9DC06D002A761D /* ViewController.swift in Sources */,
+				84E4D7E71E9DC06D002A761D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E4D7F61E9DC06D002A761D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E4D7FF1E9DC06D002A761D /* Darwin_s_EncyclopediaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E4D8011E9DC06D002A761D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E4D80A1E9DC06D002A761D /* Darwin_s_EncyclopediaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84E4D7FC1E9DC06D002A761D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E4D7E21E9DC06D002A761D /* Darwin's Encyclopedia */;
+			targetProxy = 84E4D7FB1E9DC06D002A761D /* PBXContainerItemProxy */;
+		};
+		84E4D8071E9DC06D002A761D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E4D7E21E9DC06D002A761D /* Darwin's Encyclopedia */;
+			targetProxy = 84E4D8061E9DC06D002A761D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84E4D7EA1E9DC06D002A761D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E4D7EB1E9DC06D002A761D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84E4D7F21E9DC06D002A761D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E4D7F31E9DC06D002A761D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84E4D80C1E9DC06D002A761D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84E4D80D1E9DC06D002A761D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84E4D80F1E9DC06D002A761D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Darwin's Encyclopedia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "erfan.io.Darwin-s-Encyclopedia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		84E4D8101E9DC06D002A761D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Darwin's Encyclopedia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "erfan.io.Darwin-s-Encyclopedia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		84E4D8121E9DC06D002A761D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Darwin's EncyclopediaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "erfan.io.Darwin-s-EncyclopediaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Darwin's Encyclopedia.app/Darwin's Encyclopedia";
+			};
+			name = Debug;
+		};
+		84E4D8131E9DC06D002A761D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Darwin's EncyclopediaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "erfan.io.Darwin-s-EncyclopediaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Darwin's Encyclopedia.app/Darwin's Encyclopedia";
+			};
+			name = Release;
+		};
+		84E4D8151E9DC06D002A761D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Darwin's EncyclopediaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "erfan.io.Darwin-s-EncyclopediaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Darwin's Encyclopedia";
+			};
+			name = Debug;
+		};
+		84E4D8161E9DC06D002A761D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Darwin's EncyclopediaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "erfan.io.Darwin-s-EncyclopediaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Darwin's Encyclopedia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84E4D7DE1E9DC06D002A761D /* Build configuration list for PBXProject "Darwin's Encyclopedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E4D80C1E9DC06D002A761D /* Debug */,
+				84E4D80D1E9DC06D002A761D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E4D80E1E9DC06D002A761D /* Build configuration list for PBXNativeTarget "Darwin's Encyclopedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E4D80F1E9DC06D002A761D /* Debug */,
+				84E4D8101E9DC06D002A761D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84E4D8111E9DC06D002A761D /* Build configuration list for PBXNativeTarget "Darwin's EncyclopediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E4D8121E9DC06D002A761D /* Debug */,
+				84E4D8131E9DC06D002A761D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84E4D8141E9DC06D002A761D /* Build configuration list for PBXNativeTarget "Darwin's EncyclopediaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E4D8151E9DC06D002A761D /* Debug */,
+				84E4D8161E9DC06D002A761D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84E4D7ED1E9DC06D002A761D /* Darwin_s_Encyclopedia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84E4D7EE1E9DC06D002A761D /* Darwin_s_Encyclopedia.xcdatamodel */,
+			);
+			currentVersion = 84E4D7EE1E9DC06D002A761D /* Darwin_s_Encyclopedia.xcdatamodel */;
+			path = Darwin_s_Encyclopedia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84E4D7DB1E9DC06D002A761D /* Project object */;
+}
