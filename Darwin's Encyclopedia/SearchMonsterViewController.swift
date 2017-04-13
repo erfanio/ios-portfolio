@@ -10,13 +10,14 @@ import UIKit
 import CoreData
 
 class SearchMonsterViewController: UIViewController {
-    @IBOutlet weak var editSearch: UISearchBar!
+    @IBOutlet weak var myTable: UITableView!
+    var monsters: [MonsterEntity] = [MonsterEntity]()
     
     fileprivate lazy var managedObjectContext: NSManagedObjectContext = {
         return ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext)!
     }()
     
-    fileprivate lazy var monsters: [MonsterEntity] = {
+    fileprivate lazy var originalMonsters: [MonsterEntity] = {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "MonsterEntity")
         var monsters: [NSManagedObject] = []
         do {
@@ -27,8 +28,23 @@ class SearchMonsterViewController: UIViewController {
         return monsters as! [MonsterEntity]
     }()
     
+    fileprivate var searchController = UISearchController(searchResultsController: nil)
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.myTable.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        searchController.searchBar.searchBarStyle = .minimal
+        searchController.hidesNavigationBarDuringPresentation = false
+        myTable.tableHeaderView = searchController.searchBar
+        
+        filter(searchController.searchBar.text!)
         
         // Do any additional setup after loading the view.
     }
@@ -36,6 +52,19 @@ class SearchMonsterViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func filter(_ query: String) {
+        if query.isEmpty {
+            self.monsters = originalMonsters
+        } else {
+            let q = query.lowercased()
+            self.monsters = originalMonsters.filter { monster in
+                return (monster.name?.lowercased().contains(q))!
+            }
+        }
+        self.title = "Search Monster (\(self.monsters.count))"
+        self.myTable.reloadData()
     }
     
 
@@ -48,6 +77,16 @@ class SearchMonsterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ViewTheMonsterSegue" {
+            let dest = segue.destination as! ViewMonsterViewController
+            if let indexPath = myTable.indexPathForSelectedRow {
+                let monster = monsters[indexPath.row]   
+                dest.monsterEntity = monster
+            }
+        }
+    }
 
 }
 
@@ -69,5 +108,11 @@ extension SearchMonsterViewController: UITableViewDataSource {
         cell.viewSpecies.text = monster.species
         
         return cell
+    }
+}
+
+extension SearchMonsterViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        self.filter(searchController.searchBar.text!)
     }
 }

@@ -1,28 +1,23 @@
 //
-//  NewMonsterViewController.swift
+//  EditMonsterViewController.swift
 //  Darwin's Encyclopedia
 //
-//  Created by Admin on 12/4/17.
+//  Created by Erfan Norozi on 13/4/17.
 //  Copyright © 2017 Admin. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
-class NewMonsterViewController: UIViewController {
+class EditMonsterViewController: UIViewController {
+    var monster: MonsterEntity?
+    
     @IBOutlet weak var editName: UITextField!
     @IBOutlet weak var editAge: UITextField!
     @IBOutlet weak var editAttackPower: UITextField!
     @IBOutlet weak var editSpecies: UITextField!
     @IBOutlet weak var editHealth: UITextField!
-    @IBOutlet weak var viewLabel: UILabel!
     
-    fileprivate lazy var managedObjectContext: NSManagedObjectContext = {
-        return ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext)!
-    }()
-
-    @IBAction func save(_ sender: Any) {
-        
+    @IBAction func saveAction(_ sender: Any) {
         var name: String?
         var age: Int32?
         var species: String?
@@ -77,34 +72,30 @@ class NewMonsterViewController: UIViewController {
         }
         
         if !error {
-            let monster = NSEntityDescription.insertNewObject(forEntityName: "MonsterEntity", into: self.managedObjectContext) as! MonsterEntity
-            
-            monster.name = name!
-            monster.age = age!
-            monster.species = species!
-            monster.attackPower = attackPower!
-            monster.health = health!
+            monster!.name = name!
+            monster!.age = age!
+            monster!.species = species!
+            monster!.attackPower = attackPower!
+            monster!.health = health!
             
             (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
             
-            let mon: Monster = Monster(monster)
-            
-            let alert = UIAlertController(title: "Done!", message: "Monster Added!\n\(mon.desc())", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            
-            editName.text = ""
-            editAge.text = ""
-            editSpecies.text = ""
-            editAttackPower.text = ""
-            editHealth.text = ""
+            self.navigationController?.popViewController(animated: true)
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        editName.text = monster?.name
+        editAge.text = String((monster?.age)!)
+        editSpecies.text = monster?.species
+        editAttackPower.text = String((monster?.attackPower)!)
+        editHealth.text = String((monster?.health)!)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+                // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ViewDumbMonster" {
+            let dest: ViewMonsterViewController = segue.destination as! ViewMonsterViewController
+            dest.dumbMonster = true
+        }
+    }
 }
 
